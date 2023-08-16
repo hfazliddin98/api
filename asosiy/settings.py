@@ -19,6 +19,7 @@ ALLOWED_HOSTS = ['api.kspi.uz','localhost','192.168.0.27','127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -32,6 +33,13 @@ INSTALLED_APPS = [
 
     # men qoshgan applar
     'api.apps.ApiConfig',
+    'institut.apps.InstitutConfig',
+    'faoliyat.apps.FaoliyatConfig',
+    'tuzilma.apps.TuzilmaConfig',
+    'yangilik.apps.YangilikConfig',
+    'talaba.apps.TalabaConfig',
+    'abiturient.apps.AbiturientConfig',
+    'xizmat.apps.XizmatConfig',
 ]
 
 MIDDLEWARE = [
@@ -69,23 +77,23 @@ WSGI_APPLICATION = 'asosiy.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'api',
-        'USER': 'apiuser',
-        'PASSWORD': 'Hfazliddin98',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'api',
+#         'USER': 'apiuser',
+#         'PASSWORD': 'Hfazliddin98',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
