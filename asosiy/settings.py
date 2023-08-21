@@ -30,6 +30,7 @@ INSTALLED_APPS = [
 
     # tashqi applar
     'rest_framework',
+    'drf_yasg',
 
     # men qoshgan applar
     'api.apps.ApiConfig',
@@ -54,6 +55,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'asosiy.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated'
+    ]
+}
 
 TEMPLATES = [
     {

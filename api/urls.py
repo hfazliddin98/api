@@ -1,9 +1,9 @@
-from django.urls import path
-from .models import Fayl
+from django.contrib import redirects
+from rest_framework.routers import SimpleRouter
+from .views import FaylViewSet
+
+router = SimpleRouter()
+router.register(r'api', FaylViewSet)
 
 
-urlpatterns = []
-
-# urlpatterns += [
-#     path('fayl-list/', )
-# ]
+urlpatterns = router.urls
