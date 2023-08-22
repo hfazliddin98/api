@@ -1,3 +1,8 @@
 from django.contrib import admin
+from .models import Inistitut_kengashi, Institut_haqida, Institut_tuzulmasi, Rekvizidlar, Qabulxona
 
-# Register your models here.
+
+admin.site.register([
+    Inistitut_kengashi, Institut_haqida,
+    Institut_tuzulmasi, Rekvizidlar,Qabulxona
+])

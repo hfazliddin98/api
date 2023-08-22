@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Abiturient_nomi, Abiturient_malumot, Abiturient_bolim
 
-# Register your models here.
+
+admin.site.register([Abiturient_nomi, Abiturient_malumot,Abiturient_bolim])

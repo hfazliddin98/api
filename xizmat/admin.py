@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import Interaktiv_xizmatlar
 
-# Register your models here.
+
+admin.site.register([
+    Interaktiv_xizmatlar
+])

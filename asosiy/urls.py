@@ -29,6 +29,7 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('haker/', admin.site.urls),
     path('v1/api-auth/', include('rest_framework.urls')),
+    path('v1/dj_rest_auth/', include('dj_rest_auth.urls')),
     path('v1/', include('users.urls')),    
     path('v1/abiturient/', include('abiturient.urls')),
     path('v1/faoliyat/', include('faoliyat.urls')),

@@ -30,6 +30,8 @@ INSTALLED_APPS = [
 
     # tashqi applar
     'rest_framework',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
     'drf_yasg',
 
     # men qoshgan applar
@@ -59,7 +61,11 @@ ROOT_URLCONF = 'asosiy.urls'
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated'
-    ]
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ]    
 }
 
 TEMPLATES = [

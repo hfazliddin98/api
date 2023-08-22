@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Yonalish, Bolim, Rahbar
 
-# Register your models here.
+admin.site.register([
+    Yonalish, Bolim, Rahbar
+])
