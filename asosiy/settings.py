@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'dj_rest_auth',
     'drf_yasg',
+    'corsheaders',
 
     # men qoshgan applar
     'api.apps.ApiConfig',
@@ -43,12 +44,14 @@ INSTALLED_APPS = [
     'talaba.apps.TalabaConfig',
     'abiturient.apps.AbiturientConfig',
     'xizmat.apps.XizmatConfig',
+    'jadval.apps.JadvalConfig',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -60,13 +63,19 @@ ROOT_URLCONF = 'asosiy.urls'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated'
+        'rest_framework.permissions.AllowAny'
     ],
     'DEFAULT_AUTHENTICATION_CLASSES':[
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ]    
 }
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Frontend domaingizni qo'shing
+    "http://kspi.uz",     # Mavjud bo'lgan boshqa domaingizni qo'shing
+]
+
 
 TEMPLATES = [
     {

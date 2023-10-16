@@ -5,7 +5,7 @@ from .serializers import YangilikSerializer
 
 
 class YangilikViewSet(viewsets.ModelViewSet):
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
     queryset = Yangilik.objects.all()
     serializer_class = YangilikSerializer
     
