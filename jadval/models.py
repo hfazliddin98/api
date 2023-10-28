@@ -2,11 +2,12 @@ from django.db import models
 
 
 class Jadval(models.Model):
-    turi = models.CharField(max_length=100, blank=True)
-    fakultet = models.CharField(max_length=100, blank=True)
-    yonalish = models.CharField(max_length=100, blank=True)
-    kurs = models.CharField(max_length=100, blank=True)
+    turi = models.CharField(max_length=10, blank=True)
+    fakultet = models.CharField(max_length=10, blank=True)
+    yonalish = models.CharField(max_length=10, blank=True)
+    kurs = models.CharField(max_length=10, blank=True)
     rasm = models.FileField(upload_to='jadval-rasm/', blank=True)
+    qrcode = models.FileField(upload_to='qrcode-rasm/', blank=True)
 
 
 
