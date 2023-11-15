@@ -39,6 +39,7 @@ urlpatterns = [
     path('v1/xizmat/', include('xizmat.urls')),
     path('v1/yangilik/', include('yangilik.urls')),
     path('v1/jadval/', include('jadval.urls')),
+    path('v1/rahbariyat/', include('rahbariyat.urls')),
     path('v1/rest/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('v1/rest/docs/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),    
 ]

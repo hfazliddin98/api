@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'abiturient.apps.AbiturientConfig',
     'xizmat.apps.XizmatConfig',
     'jadval.apps.JadvalConfig',
+    'rahbariyat.apps.RahbariyatConfig',
 ]
 
 MIDDLEWARE = [
