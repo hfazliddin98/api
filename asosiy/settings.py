@@ -74,7 +74,8 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Frontend domaingizni qo'shing
-    "http://kspi.uz",     # Mavjud bo'lgan boshqa domaingizni qo'shing
+    "http://info.kspi.uz",     # Mavjud bo'lgan boshqa domaingizni qo'shing
+    "https://info.kspi.uz",
 ]
 
 
