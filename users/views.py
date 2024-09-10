@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
@@ -6,4 +6,4 @@ from django.views.decorators.csrf import csrf_exempt
 def home(request):
 
 
-    return render(request, 'home.html')
+    return redirect('v1/rest/docs/')
