@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .env
 /media
 /muhit
 =======
+=======
+>>>>>>> 1cd66a4dcc0d7fb05e5be565f499eb8f6f079637
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -164,4 +167,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+<<<<<<< HEAD
+>>>>>>> 1cd66a4dcc0d7fb05e5be565f499eb8f6f079637
+=======
 >>>>>>> 1cd66a4dcc0d7fb05e5be565f499eb8f6f079637
