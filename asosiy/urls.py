@@ -28,8 +28,6 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('haker/', admin.site.urls),
-    # path('v1/api-auth/', include('rest_framework.urls')),
-    # path('v1/dj_rest_auth/', include('dj_rest_auth.urls')),
     path('', include('users.urls')),    
     path('v1/abiturient/', include('abiturient.urls')),
     path('v1/faoliyat/', include('faoliyat.urls')),
@@ -41,8 +39,8 @@ urlpatterns = [
     path('v1/jadval/', include('jadval.urls')),
     path('v1/qabul/', include('qabul.urls')),
     path('v1/rahbariyat/', include('rahbariyat.urls')),
-    path('v1/rest/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    path('v1/rest/docs/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),    
+    path('v1/rest/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('v1/rest//redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),    
 ]
 
 
