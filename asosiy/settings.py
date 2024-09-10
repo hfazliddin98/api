@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-)%-%@6$!xlh20zv#$^=yf(c&+_tx1p86)+o!k2y+g=(0romn_&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['api.kspi.uz','localhost','192.168.0.27','127.0.0.1']
+ALLOWED_HOSTS = ['api.kspi.uz','127.0.0.1']
 CSRF_TRUSTED_ORIGINS=['https://api.kspi.uz', 'http://api.kspi.uz']
 
 
@@ -109,17 +109,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'api',
-#         'USER': 'apiuser',
-#         'PASSWORD': 'Hfazliddin98',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
