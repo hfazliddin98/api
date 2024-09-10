@@ -27,7 +27,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
 
     # tashqi applar
@@ -54,7 +53,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -76,18 +74,10 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Frontend domaingizni qo'shing
-    "http://localhost:3001",  
-    "http://info.kspi.uz",     # Mavjud bo'lgan boshqa domaingizni qo'shing
+    "http://localhost:3000", 
+    "http://info.kspi.uz",    
     "https://info.kspi.uz",
-    "http://yangi.kspi.uz",     
-    "https://yangi.kspi.uz",
-    "http://kspi.uz",     
-    "https://kspi.uz",
-    "http://admin.kspi.uz",     
-    "https://admin.kspi.uz",
-    "http://qabul2024.kspi.uz",     
-    "https://qabul2024.kspi.uz",
+
 ]
 
 
