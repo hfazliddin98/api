@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .env
-/media
-/muhit
-=======
-=======
->>>>>>> 1cd66a4dcc0d7fb05e5be565f499eb8f6f079637
+media/
+muhit/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
