@@ -1,1 +1,1 @@
-# api
+# KSPI saytlar uchun umumiy api
