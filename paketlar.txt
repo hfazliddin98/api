@@ -1,0 +1,16 @@
+django
+pillow
+requests
+pandas
+qrcode
+xlwt
+psycopg2-binary
+django-dbbackup
+django-crontab
+coreschema
+dj-rest-auth
+django-cors-headers
+django-filter
+djangorestframework
+djangorestframework-simplejwt
+drf-yasg
