@@ -1,5 +1,8 @@
 from django.contrib import admin
-from .models import User, Asosiy
+from django.contrib.auth.models import Group
+from .models import User
+
+admin.site.unregister(Group)
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
@@ -8,6 +11,4 @@ class UserAdmin(admin.ModelAdmin):
         'is_superuser', 'is_active'
     ]
 
-@admin.register(Asosiy)
-class AsosiyAdmin(admin.ModelAdmin):
-    list_display  = ['id']
+

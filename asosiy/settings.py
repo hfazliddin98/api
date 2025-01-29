@@ -16,8 +16,8 @@ SECRET_KEY = 'django-insecure-3l^@sr2x$atv9&fk-s2!x=daef161()4g8=js@fe%uz4d*3d%3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# DOMEN = 'tyutor.pythonanywhere.com'
-DOMEN = 'api.kspi.uz'
+DOMEN = 'api2024.pythonanywhere.com'
+# DOMEN = 'api.kspi.uz'
 LOCAL_DOMEN = '127.0.0.1'
 
 ALLOWED_HOSTS = ['.kokanddeveloper.uz', DOMEN, 'localhost', LOCAL_DOMEN]
