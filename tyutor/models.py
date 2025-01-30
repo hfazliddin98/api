@@ -23,5 +23,4 @@ class Fayl(AsosiyModel):
     file = models.FileField(upload_to='topshiriq/')
     topshiriq = models.ForeignKey(Topshiriq, related_name='fayllar', on_delete=models.CASCADE)
 
-class Baxo(AsosiyModel):
-    
+# class Baxo(AsosiyModel):
