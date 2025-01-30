@@ -1,10 +1,10 @@
 from django.urls import path
 from rest_framework.routers import SimpleRouter
-from tyutor.views import TyutorProfilModelViewSet
+from tyutor.views import TyutorProfilModelViewSet, TopshiriqViewSet
 
 router = SimpleRouter()
 router.register(r'users', TyutorProfilModelViewSet)
-# router.register(r'fakultets', FakultetsViewSet)
+router.register(r'topshiriq', TopshiriqViewSet)
 
 
 urlpatterns = []

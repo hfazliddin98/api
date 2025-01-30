@@ -6,3 +6,9 @@ class UserRoleChoice(models.TextChoices):
     TYUTOR = ("tyutor", "tyutor")
 
 
+class TopshiriqRoleChoice(models.TextChoices):
+    MAJBURIY = ("majburiy", "majburiy")
+    QOSHIMCHA = ("qoshimcha", "qoshimcha")
+    IXTIYORIY = ("ixtiyoriy", "ixtiyoriy")
+
+

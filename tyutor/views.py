@@ -1,15 +1,17 @@
 from django.shortcuts import render
+from rest_framework.parsers import MultiPartParser, FormParser
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 from rest_framework import status
 from users.models import User
-from tyutor.models import TyutorProfil, Fakultet
-from tyutor.serializers import TyutorProfilGetSerializer, TyutorProfilPostSerializer
+from tyutor.models import TyutorProfil, Fakultet, Fayl, Topshiriq
+from tyutor.serializers import TyutorProfilGetSerializer, TyutorProfilPostSerializer, TopshiriqSerializer
 
 
 class TyutorProfilModelViewSet(ModelViewSet):
     queryset = TyutorProfil.objects.filter(user__is_superuser=False)
+    http_method_names = ['get', 'post', 'patch']
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['user__username', 'user_role']
 
@@ -63,3 +65,13 @@ class TyutorProfilModelViewSet(ModelViewSet):
 
         except Exception as e:
             return Response({"detail": f"Xatolik: {str(e)}"}, status=status.HTTP_400_BAD_REQUEST)
+        
+
+
+class TopshiriqViewSet(ModelViewSet):
+    queryset = Topshiriq.objects.all()
+    http_method_names = ['get', 'post', 'patch', 'delete']
+    serializer_class = TopshiriqSerializer
+    parser_classes = (MultiPartParser, FormParser)  # Fayllarni qabul qilish uchun
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['title']
